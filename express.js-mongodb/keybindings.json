@@ -1,0 +1,67 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+      "key": "shift+alt+1",
+      "command": "editor.action.insertSnippet",
+      "when": "editorTextFocus",
+      "args": {
+        "snippet": "ObjectId(${TM_SELECTED_TEXT})"
+      }
+    },
+    {
+      "key": "shift+alt+2",
+      "command": "editor.action.insertSnippet",
+      "when": "editorTextFocus",
+      "args": {
+        "snippet": "mongoose.Types.ObjectId(${TM_SELECTED_TEXT})"
+      }
+    },
+    {
+      "key": "shift+alt+3",
+      "command": "editor.action.insertSnippet",
+      "when": "editorTextFocus",
+      "args": {
+        "snippet": "JSON.stringify(${TM_SELECTED_TEXT}, null, 2)"
+      }
+    },
+    {
+      "key": "shift+alt+4",
+      "command": "editor.action.insertSnippet",
+      "when": "editorTextFocus",
+      "args": {
+        "snippet": "try {\n\t${TM_SELECTED_TEXT}\n}\ncatch(e) {\n\tconsole.log('error', e.stack);\n}"
+      }
+    },
+    {
+      "key": "shift+alt+5",
+      "command": "editor.action.insertSnippet",
+      "when": "editorTextFocus",
+      "args": {
+        "snippet": "console.time('txt');\n${TM_SELECTED_TEXT}\nconsole.timeEnd('txt');"
+      }
+    },
+    {
+      "key": "shift+alt+6",
+      "command": "editor.action.insertSnippet",
+      "when": "editorTextFocus",
+      "args": {
+        "snippet": "${${TM_SELECTED_TEXT}}"
+      }
+    },
+    {
+      "key": "shift+alt+7",
+      "command": "editor.action.insertSnippet",
+      "when": "editorTextFocus",
+      "args": {
+        "snippet": "/*${TM_SELECTED_TEXT}*/"
+      }
+    },
+    {
+      "key": "shift+alt+8",
+      "command": "editor.action.insertSnippet",
+      "when": "editorTextFocus",
+      "args": {
+        "snippet": "fmt.Sprintf(\"%s\", ${TM_SELECTED_TEXT})"
+      }
+    }
+  ]
