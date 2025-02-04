@@ -1,11 +1,19 @@
 // Place your key bindings in this file to override the defaults
 [
-    {
-      "key": "shift+alt+1",
-      "command": "editor.action.insertSnippet",
-      "when": "editorTextFocus",
-      "args": {
-        "snippet": "Option<${TM_SELECTED_TEXT}>"
-      }
+  {
+    "key": "shift+alt+1",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "Option<${TM_SELECTED_TEXT}>"
     }
-  ]
+  },
+  {
+    "key": "shift+alt+2",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "COALESCE(${TM_SELECTED_TEXT}, 0)"
+    }
+  }
+]
